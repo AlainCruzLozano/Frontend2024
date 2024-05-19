@@ -1,0 +1,19 @@
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+h1{
+    text-align: center;
+    color: white;
+}
+body{
+    background-color: black;
+}
+.text-end{
+    text-align: end;
+    color: white;
+}
+.white{
+    color: white;
+}
