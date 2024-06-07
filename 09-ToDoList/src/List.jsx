@@ -1,5 +1,5 @@
 import ListItem from "./ListItem"
-const List=({tasklist})=>{
+const List=({tasklist, setTaskList})=>{
 
 return (  
     <>   
@@ -19,6 +19,8 @@ return (
                 <ListItem
                 key={task.id}
                 task={task}
+                taskList={taskList}
+                setTaskList={setTaskList}
                 />          
         )
     )

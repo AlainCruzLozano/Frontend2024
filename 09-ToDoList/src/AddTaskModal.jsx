@@ -1,3 +1,7 @@
+import Swal from "sweetalert2"
+// import withReactContent form
+import uuidv4 from "uuid"
+
 const taskInfo = {
     task: '',
     description: '',
@@ -10,7 +14,7 @@ const AddTaskModal = ({taskList}) => {
     
 const handleSaveClick = () => {
         setTaskList([...taskList, {
-            id: taskList.lenght + 1, 
+            id: uuidv4(), 
             ...values,
             done: false
         }])
